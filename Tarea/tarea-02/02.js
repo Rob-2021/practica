@@ -13,4 +13,4 @@ while(i < numeros.length){
     i++;
 }
 
-console.log("Ejercicio hecho con while: " + sumaWhile); // 30
+console.log("Ejercicio hecho con while: " + sumaWhile); // 15

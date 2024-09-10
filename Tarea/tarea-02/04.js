@@ -4,10 +4,24 @@ let persona = {
     profesion: 'Ingeniero',
 };
 
+// console.log(persona);
+
+// function actualizarInformacion(nuevaEdad, nuevaProfesion) {
+//     persona.edad = nuevaEdad;
+//     persona.profesion = nuevaProfesion;
+// }
+
+// actualizarInformacion(30, 'Doctor');
+// console.log(persona); 
+
 function actualizarInformacion(nuevaEdad, nuevaProfesion) {
-    persona.edad = nuevaEdad;
-    persona.profesion = nuevaProfesion;
+    return {
+        ...persona,
+        edad: nuevaEdad,
+        profesion: nuevaProfesion,
+    };
 }
 
-actualizarInformacion(30, 'Doctor');
-console.log(persona); 
+let personaActualizada = actualizarInformacion(30, 'Doctor');
+console.log(persona);
+console.log(personaActualizada);
